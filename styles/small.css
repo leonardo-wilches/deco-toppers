@@ -42,6 +42,10 @@ header img {
     color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .hamburger.show {
@@ -60,7 +64,6 @@ header img {
 /****************** NAVIGATION ******************/
 
 .navigation {
-    display: none;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
