@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #1a0a8b;
-    --secundary-color: #ff914d;
+    --secondary-color: #ff914d;
     --background-color: #3D405B;
 }
 
@@ -39,9 +39,6 @@ header img {
     border: none;
     font-size: 2rem;
     color: var(--primary-color);
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: none;
     box-shadow: none;
     transition: transform 0.3s ease;
 }
@@ -98,7 +95,7 @@ header img {
 /****************** MAIN ******************/
 
 h1 {
-    margin: 0 auto;
+    margin: 0;
     padding: 1rem;
     background-color: var(--background-color);
     color: #ffffff;
@@ -109,6 +106,7 @@ h1 {
 
 footer {
     text-align: center;
+    background-color: var(--background-color);
 }
 
 .social {
@@ -117,7 +115,6 @@ footer {
     gap: 1rem;
     margin: 0 auto;
     padding: 10px;
-    background-color: var(--background-color);
 }
 
 .social a {
@@ -134,11 +131,10 @@ footer {
 }
 
 .info {
-    background-color: var(--background-color);
     color: #ffffff;
     padding: 0 10px 10px 10px;
     margin: 0 auto;
-    font-weight: 100;
+    font-weight: 200;
     font-size: small;
 }
 

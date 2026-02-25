@@ -31,7 +31,7 @@
     }
 
     .navigation a:hover {
-        background-color: #E07A5F;
+        background-color: var(--secondary-color);
         color: #ffffff;
         text-decoration: underline;
         text-underline-offset: 4px;
