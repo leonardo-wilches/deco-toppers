@@ -23,8 +23,8 @@ contenedor.style.minWidth = '400px';
 
 // Botón anterior
 const btnPrev = document.createElement('button');
-btnPrev.textContent = '◀';
-btnPrev.style.width = '1500px';      // ancho fijo
+btnPrev.textContent = '<';
+btnPrev.style.width = '1000px';      // ancho fijo
 btnPrev.style.fontSize = '1.2rem';
 btnPrev.style.fontWeight = '300';  // flecha más fina
 btnPrev.style.background = 'transparent';
@@ -34,8 +34,8 @@ btnPrev.style.cursor = 'pointer';
 
 // Botón siguiente
 const btnNext = document.createElement('button');
-btnNext.textContent = '▶';
-btnNext.style.width = '1500px';      // ancho fijo
+btnNext.textContent = '>';
+btnNext.style.width = '1000px';      // ancho fijo
 btnNext.style.fontSize = '1.2rem';
 btnNext.style.fontWeight = '300';
 btnNext.style.background = 'transparent';
@@ -49,7 +49,7 @@ texto.textContent = mensajes[indice];
 texto.style.transition = 'opacity 0.8s';
 texto.style.textAlign = 'center';
 texto.style.flexGrow = '1';        // ocupa todo el espacio entre las flechas
-texto.style.minWidth = '200px';    // evita que cambie de tamaño el contenedor
+texto.style.minWidth = '500px';    // evita que cambie de tamaño el contenedor
 
 // Añadir elementos al contenedor
 contenedor.appendChild(btnPrev);
