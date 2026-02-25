@@ -1,0 +1,143 @@
+/****************** SITE ******************/
+
+:root {
+    --primary-color: #1a0a8b;
+    --secundary-color: #ff914d;
+    --background-color: #3D405B;
+}
+
+*, *::before, *::after {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/****************** HEADER ******************/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: solid 1px #ddd;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/****************** HAMBURGER NAVIGATION ******************/
+
+.hamburger {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/****************** NAVIGATION ******************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navigation li.current {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #1a0a8b;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+/****************** MAIN ******************/
+
+h1 {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #3D405B;
+    color: #ccc;
+    text-align: center;
+}
+
+/****************** FOOTER ******************/
+
+footer {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #3D405B;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+.social a:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
+
+.info {
+    background-color: var(--background-color);
+    color: #ffffff;
+    padding: 0 10px 10px 10px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.info div {
+    margin: 0 auto;
+    padding: 0.2rem;
+}

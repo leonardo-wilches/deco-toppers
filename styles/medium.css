@@ -1,0 +1,179 @@
+@media only screen and (min-width: 38rem) {
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 100%;
+    }
+
+    header {
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 0 16px 0 16px;
+        border-bottom: none;
+    }
+
+    header span {
+        padding-top: 9px;
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+        margin: 0;
+    }
+
+    .head-navegation {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        font-size: 1.5rem;
+        border-bottom: solid 1px #eee;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #eee;
+        text-align: left;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .social a {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 4rem;
+    }
+
+    .social img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .view-buttons {
+        display: grid;
+    }
+
+    .member-card img {
+        width: 100%;
+        height: auto;
+        border: none;
+        padding: 0;
+    }
+
+    /******************* LIST *******************/
+
+    .list-view {
+        display: block !important;
+    }
+
+    .list-view .member-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 1rem;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .list-view .member-card img {
+        display: none;
+    }
+
+    .list-view .member-card h3 {
+        width: 200px;
+        font-size: 1rem;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .list-view .member-card p {
+        margin: 0;
+        padding: 0;
+        width: 220px;
+        font-size: .9rem;
+    }
+
+    .list-view .member-card a {
+        color: #2b6cb0;
+        font-size: .9rem;
+    }
+
+    /************** DISCOVER ****************/
+
+    #places {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #places div {
+        display: grid;
+        grid-template-areas:
+        "photograph name"
+        "photograph description"
+        "button location";
+        align-items: start;
+    }
+
+    #places div figure {
+        object-fit: cover;
+    }
+
+    #places figure {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    /************** HOVER EFFECT ****************/
+    
+    #places div {
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        border-radius: 10px;
+    }
+
+    #places div:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px #0000002e;
+    }
+
+    #places figure {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    #places figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #places figure img:hover {
+        transform: scale(1.08);
+        filter: brightness(90%);
+    }
+
+    #places button:hover {
+        background-color: #cd7f32;
+    }
+}

@@ -1,0 +1,51 @@
+@media only screen and (min-width: 64rem) {
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 100%;
+    }
+
+    header {
+        align-items: center;
+        font-size: 1.5rem;
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation a {
+        border: none;
+        margin: 0;
+    }
+
+    .head-navegation {
+        display: grid;
+        grid-template-columns: auto;
+        font-size: 1.5rem;
+        border-bottom: solid 1px #eee;
+
+    }
+
+    .social a{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 4rem;
+    }
+
+    .social img {
+        width: 2.5rem;
+        height: auto;
+    }
+}
