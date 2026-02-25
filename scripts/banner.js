@@ -17,7 +17,7 @@ contenedor.style.backgroundColor = '#ff914d';
 contenedor.style.color = '#fff';
 contenedor.style.padding = '20px 20px';
 contenedor.style.fontWeight = '300';
-contenedor.style.fontSize = '1.2rem';
+contenedor.style.fontSize = '1rem';
 contenedor.style.cursor = 'default';
 contenedor.style.minWidth = '400px';
 
