@@ -23,7 +23,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #ffffff;
 }
 
 header img {
@@ -39,7 +39,7 @@ header img {
     background: none;
     border: none;
     font-size: 2rem;
-    color: #3D405B;
+    color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -79,7 +79,7 @@ header img {
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
-    text-decoration-color: #1a0a8b;
+    text-decoration-color: var(--primary-color);
 }
 
 .navigation a:hover {
@@ -91,8 +91,8 @@ header img {
 h1 {
     margin: 0 auto;
     padding: 1rem;
-    background-color: #3D405B;
-    color: #ccc;
+    background-color: var(--background-color);
+    color: #ffffff;
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ footer {
     gap: 1rem;
     margin: 0 auto;
     padding: 10px;
-    background-color: #3D405B;
+    background-color: var(--background-color);
 }
 
 .social a {
