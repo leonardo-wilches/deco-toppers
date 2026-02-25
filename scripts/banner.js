@@ -16,7 +16,7 @@ contenedor.style.justifyContent = 'space-between';
 contenedor.style.backgroundColor = '#ff914d';
 contenedor.style.color = '#fff';
 contenedor.style.padding = '20px 20px';
-contenedor.style.fontWeight = '500';
+contenedor.style.fontWeight = '300';
 contenedor.style.fontSize = '1.2rem';
 contenedor.style.cursor = 'default';
 contenedor.style.minWidth = '400px';
@@ -76,19 +76,19 @@ function anterior() {
 }
 
 // Timer automático
-let timer = setInterval(siguiente, 8000);
+let timer = setInterval(siguiente, 5000);
 
 // Eventos botones
 btnNext.addEventListener('click', () => {
     clearInterval(timer);
     siguiente();
-    timer = setInterval(siguiente, 8000);
+    timer = setInterval(siguiente, 5000);
 });
 
 btnPrev.addEventListener('click', () => {
     clearInterval(timer);
     anterior();
-    timer = setInterval(siguiente, 8000);
+    timer = setInterval(siguiente, 5000);
 });
 
 // Inserta el contenedor antes del header
