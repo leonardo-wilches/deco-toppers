@@ -15,6 +15,41 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
+/****************** TOP BANNER ******************/
+
+.top-banner {
+    background-color: var(--secondary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.banner-messages {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.banner-message {
+    display: none;
+    margin: 0;
+}
+
+.banner-message.active {
+    display: block;
+}
+
+.banner-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
 /****************** HEADER ******************/
 
 header {
