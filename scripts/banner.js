@@ -6,67 +6,85 @@ const mensajes = [
 ];
 
 let indice = 0;
+let animando = false;
 
-// Contenedor principal (fondo)
+// Contenedor principal
 const contenedor = document.createElement('div');
 contenedor.id = 'mensajes-dinamicos';
-contenedor.style.display = 'flex';
-contenedor.style.alignItems = 'center';
-contenedor.style.justifyContent = 'space-between';
-contenedor.style.backgroundColor = '#ff914d';
-contenedor.style.color = '#fff';
-contenedor.style.padding = '20px 20px';
-contenedor.style.fontWeight = '300';
-contenedor.style.fontSize = '1rem';
-contenedor.style.cursor = 'default';
-contenedor.style.minWidth = '400px';
+Object.assign(contenedor.style, {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#ff914d',
+    color: '#fff',
+    padding: '20px 20px',
+    fontWeight: '300',
+    fontSize: '1rem',
+    cursor: 'default',
+    width: '100%',
+    maxWidth: '600px',
+    margin: '10px auto'
+});
 
 // Botón anterior
 const btnPrev = document.createElement('button');
 btnPrev.textContent = '<';
-btnPrev.style.width = '200px';      // ancho fijo
-btnPrev.style.fontSize = '1.2rem';
-btnPrev.style.fontWeight = '300';  // flecha más fina
-btnPrev.style.background = 'transparent';
-btnPrev.style.border = 'none';
-btnPrev.style.color = '#fff';
-btnPrev.style.cursor = 'pointer';
+Object.assign(btnPrev.style, {
+    width: '40px',
+    fontSize: '1.2rem',
+    fontWeight: '300',
+    background: 'transparent',
+    border: 'none',
+    color: '#fff',
+    cursor: 'pointer'
+});
 
 // Botón siguiente
 const btnNext = document.createElement('button');
 btnNext.textContent = '>';
-btnNext.style.width = '200px';      // ancho fijo
-btnNext.style.fontSize = '1.2rem';
-btnNext.style.fontWeight = '300';
-btnNext.style.background = 'transparent';
-btnNext.style.border = 'none';
-btnNext.style.color = '#fff';
-btnNext.style.cursor = 'pointer';
+Object.assign(btnNext.style, {
+    width: '40px',
+    fontSize: '1.2rem',
+    fontWeight: '300',
+    background: 'transparent',
+    border: 'none',
+    color: '#fff',
+    cursor: 'pointer'
+});
 
-// Span del texto (fade)
+// Span del texto
 const texto = document.createElement('span');
 texto.textContent = mensajes[indice];
-texto.style.transition = 'opacity 0.8s';
-texto.style.textAlign = 'center';
-texto.style.flexGrow = '1';        // ocupa todo el espacio entre las flechas
-texto.style.minWidth = '200px';    // evita que cambie de tamaño el contenedor
+Object.assign(texto.style, {
+    transition: 'opacity 0.8s',
+    textAlign: 'center',
+    flexGrow: '1',
+    minWidth: '200px'
+});
 
-// Añadir elementos al contenedor
+// Añadir elementos
 contenedor.appendChild(btnPrev);
 contenedor.appendChild(texto);
 contenedor.appendChild(btnNext);
 
 // Función para cambiar mensaje con fade
 function cambiarMensaje(nuevoIndice) {
+    if (animando) return;
+    animando = true;
+
     texto.style.opacity = 0;
     setTimeout(() => {
         indice = nuevoIndice;
         texto.textContent = mensajes[indice];
         texto.style.opacity = 1;
-    }, 300);
+    }, 400);
+
+    setTimeout(() => {
+        animando = false;
+    }, 900); // fade out + fade in
 }
 
-// Función siguiente y anterior
+// Funciones siguiente y anterior
 function siguiente() {
     cambiarMensaje((indice + 1) % mensajes.length);
 }
