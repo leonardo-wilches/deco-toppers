@@ -1,6 +1,6 @@
 const mensajes = [
     "¡Bienvenido a Deco Toppers Chile!",
-    "Revisa nuestro catálogo de toppers y bases para tortas",
+    "Revisa nuestro catálogo",
     "Haz tu pedido por WhatsApp",
     "Realiza pedidos personalizados"
 ];
