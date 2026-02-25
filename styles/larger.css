@@ -30,12 +30,20 @@
         margin: 0;
     }
 
+    .navigation a:hover {
+        background-color: #E07A5F;
+        color: #ffffff;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #ffffff;
+    }
+
     .head-navegation {
         display: grid;
         grid-template-columns: auto;
         font-size: 1.5rem;
         border-bottom: solid 1px #ffffff;
-
     }
 
     .social a{
@@ -47,5 +55,10 @@
     .social img {
         width: 2.5rem;
         height: auto;
+    }
+
+    .social a:hover {
+        transform: scale(1.15);
+        opacity: 0.85;
     }
 }

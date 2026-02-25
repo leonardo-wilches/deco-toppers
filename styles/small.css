@@ -27,7 +27,7 @@ header {
 }
 
 header img {
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -44,6 +44,11 @@ header img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.hamburger.show {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
 .hamburger::before {
     content: "\2630";
 }
@@ -56,16 +61,25 @@ header img {
 
 .navigation {
     display: none;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 .navigation.show {
     display: block;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .navigation a {
@@ -80,10 +94,6 @@ header img {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
     text-decoration-color: var(--primary-color);
-}
-
-.navigation a:hover {
-    background-color: #E07A5F;
 }
 
 /****************** MAIN ******************/
@@ -122,11 +132,6 @@ footer {
 .social img {
     width: 32px;
     height: 32px;
-}
-
-.social a:hover {
-    transform: scale(1.15);
-    opacity: 0.85;
 }
 
 .info {
