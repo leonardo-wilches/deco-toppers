@@ -7,7 +7,6 @@
 }
 
 *, *::before, *::after {
-    font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
 }
 
@@ -42,15 +41,13 @@ header img {
     color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: none;
-    border: none;
     outline: none;
     box-shadow: none;
+    transition: transform 0.3s ease;
 }
 
 .hamburger.show {
     transform: rotate(90deg);
-    transition: transform 0.3s ease;
 }
 
 .hamburger::before {
@@ -72,8 +69,7 @@ header img {
 }
 
 .navigation.show {
-    display: block;
-    max-height: 500px;
+    max-height: 100vh;
     opacity: 1;
     transform: translateY(0);
 }
