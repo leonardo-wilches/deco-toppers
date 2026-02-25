@@ -1,15 +1,7 @@
 @media only screen and (min-width: 64rem) {
-    header,
-    main,
-    nav,
-    footer {
-        max-width: 100%;
-    }
 
     header {
-        align-items: center;
         font-size: 1.5rem;
-        border-bottom: none;
     }
 
     .hamburger {
@@ -18,16 +10,14 @@
     
     .navigation {
         display: block;
+        max-height: none;
+        opacity: 1;
+        transform: none;
     }
 
     .navigation ul {
         display: flex;
         justify-content: center;
-    }
-
-    .navigation a {
-        border: none;
-        margin: 0;
     }
 
     .navigation a:hover {
@@ -37,13 +27,6 @@
         text-underline-offset: 4px;
         text-decoration-thickness: 1px;
         text-decoration-color: #ffffff;
-    }
-
-    .head-navegation {
-        display: grid;
-        grid-template-columns: auto;
-        font-size: 1.5rem;
-        border-bottom: solid 1px #ffffff;
     }
 
     .social a{

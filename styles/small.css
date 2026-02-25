@@ -22,11 +22,10 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    border-bottom: solid 1px #ffffff;
 }
 
 header img {
-    width: 120px;
+    width: 128px;
     height: auto;
 }
 
@@ -39,7 +38,6 @@ header img {
     border: none;
     font-size: 2rem;
     color: var(--primary-color);
-    box-shadow: none;
     transition: transform 0.3s ease;
 }
 
@@ -66,7 +64,7 @@ header img {
 }
 
 .navigation.show {
-    max-height: 500px;
+    max-height: 1000px;
     opacity: 1;
     transform: translateY(0);
 }
@@ -102,6 +100,10 @@ h1 {
     text-align: center;
 }
 
+.container {
+    margin: 0 auto;
+}
+
 /****************** FOOTER ******************/
 
 footer {
@@ -113,7 +115,6 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 0 auto;
     padding: 10px;
 }
 
@@ -136,9 +137,4 @@ footer {
     margin: 0 auto;
     font-weight: 200;
     font-size: small;
-}
-
-.info div {
-    margin: 0 auto;
-    padding: 0.2rem;
 }

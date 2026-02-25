@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deco Toppers Chile - Home page</title>
-    <meta name="description" content="Deco Toppers Chile homepage, product catalog and prices. Cake bases, cake toppers and stickers.">
+    <title>Deco Toppers Chile - Inicio</title>
+    <meta name="description" content="Catálogo de Deco Toppers Chile. Bases para tortas, cake toppers y stickers personalizados. Revisa precios y haz tu pedido por WhatsApp.">
     <meta name="author" content="Leonardo Wilches">
+    <meta name="theme-color" content="#3D405B">
 
-    <meta property="og:title" content="Deco Toppers Chile - Home page">
-    <meta property="og:description" content="Deco Toppers Chile homepage, product catalog and prices. Cake bases, cake toppers and stickers.">
+    <meta property="og:title" content="Deco Toppers Chile - Inicio">
+    <meta property="og:description" content="Catálogo de Deco Toppers Chile. Bases para tortas, cake toppers y stickers personalizados. Revisa precios y haz tu pedido por WhatsApp.">
     <meta property="og:image" content="https://leonardo-wilches.github.io/deco-toppers/images/deco-toppers-logo.webp">
-    <meta property="og:url" content="https://leonardo-wilches.github.io/deco-toppers/index.html">
+    <meta property="og:url" content="https://leonardo-wilches.github.io/deco-toppers/">
+    <meta property="og:type" content="website">
 
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -29,16 +31,18 @@
 </head>
 
 <body>
-        <header>
-            <img src="images/deco-toppers-logo.webp" alt="Deco Toppers Logo" width="512" height="512">
-            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-bar"></button>
-        </header>
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="current"><a href="index.html">Inicio</a></li>
-            </ul>
-        </nav>
-    <main>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/deco-toppers-logo.webp" alt="Deco Toppers Chile logo" width="128" height="128">
+        </a>
+        <button type="button" id="ham-btn" class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-bar"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <main class="container">
         <h1>Catálogo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam dolorum autem eum incidunt eveniet aliquam,
             earum ex in distinctio sunt officiis, error quisquam deserunt ad repudiandae maiores blanditiis quasi?</p>
@@ -52,16 +56,16 @@
             earum ex in distinctio sunt officiis, error quisquam deserunt ad repudiandae maiores blanditiis quasi?</p>
     </main>
     <footer>
-        <div class="social">
-            <a href="https://wa.me/56937138906" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp Logo Image" width="16"
+        <nav class="social" aria-label="Redes sociales">
+            <a href="https://wa.me/56937138906?text=Hola%20quiero%20información" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
                     height="16"></a>
-            <a href="https://www.instagram.com/decotoppers.chile/" target="_blank"><img src="images/instagram.png" alt="Instagram Logo Image"
+            <a href="https://www.instagram.com/decotoppers.chile/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"
                     width="16" height="16"></a>
-            <a href="https://web.facebook.com/decotoppers.sanantonio" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo Image"
+            <a href="https://web.facebook.com/decotoppers.sanantonio" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook"
                     width="16" height="16"></a>
-        </div>
+        </nav>
         <div class="info">
-            <div>&copy;<span id="currentyear"></span> Deco Toppers Chile. Todos los derechos reservados.</div>
+            <p>&copy;<span id="currentyear"></span> Deco Toppers Chile. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
