@@ -21,9 +21,6 @@ Object.assign(contenedor.style, {
     fontWeight: '300',
     fontSize: '1rem',
     cursor: 'default',
-    width: '100%',
-    maxWidth: '600px',
-    margin: '10px auto'
 });
 
 // Botón anterior
